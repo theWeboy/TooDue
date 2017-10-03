@@ -1,0 +1,130 @@
+body{
+    margin-top: 75px;
+    font-size:16px;
+    overflow-x: hidden;
+    background-color: lightyellow;
+}
+#showcase-img{
+    height: 420px;
+    width: 490px;
+    border-radius: 6%;
+    margin-left: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
+}
+
+p{
+    font-family: Roboto;
+}
+
+.navbar-default{
+    background: rgba(250,150,150,0.5);
+    border: 0;
+    font-family:Poppins;
+    opacity: 80;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    color: #000; !important;
+    font-weight: bold;
+}
+#showcase h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.showcase-btn:hover{
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    background-color: seashell;
+    color: #d34836;
+}
+
+.showcase-btn1:hover{
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    background-color: darksalmon;!important;
+    color: #d34836;!important;
+}
+#showcase .showcase-right{
+    margin-top: 70px;
+}
+
+#testimonial{
+    background: #f1f1f1;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#testimonial p{
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+    color: #000;
+}
+#testimonial p.customer{
+    font-size: 20px;
+    color: #666;
+}
+#info h1{
+    font-size: 50px;
+    color: black;
+}
+#info p{
+    font-size: 18px;
+    color: #222;
+}
+section.cta{
+    padding: 250px 0;
+    background-image: url("../public/back3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    color: black;
+}
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: white;
+}
+
+a:active{
+    color: #d34836;!important;
+}
+
+a:focus{
+    color: #d34836;
+}
+
+#contact{
+    background-color: khaki;
+}
+
+footer{
+    background-color: bisque;
+    padding:30px;
+}
+

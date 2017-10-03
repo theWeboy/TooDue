@@ -1,0 +1,132 @@
+body{
+    margin-top: 50px;
+    font-size:16px;
+    overflow-x: hidden;
+    background: url("../public/todoback2.jpg");
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+
+
+.jumbotron{
+    background: rgba(200,130,50,0.5);
+
+}
+
+
+
+
+#cont{
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Poppins;
+
+}
+
+p{
+    font-family: Roboto;
+}
+.navbar-default{
+    background: rgba(250,150,150,0.5);
+    border: 0;
+    font-family:Poppins;
+    opacity: 80;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    color: #000; !important;
+    font-weight: bold;
+
+}
+
+.showcase-btn{
+    background-color: sandybrown;
+    color: black;
+}
+
+.showcase-btn:hover{
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    background-color: bisque;
+    color: #d34836;
+}
+
+#add:hover{
+    -webkit-transition-duration: 0.9s;
+    -moz-transition-duration: 0.9s;
+    -o-transition-duration: 0.9s;
+    color: limegreen;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.content {
+    display: none;
+    padding : 5px;
+}
+
+.del-icon{
+    font-size: 40px;
+    color: indianred;
+}
+.del-icon:hover{
+    cursor: pointer;
+    color: brown;
+}
+
+#manager{
+    margin-top: 8px;
+}
+
+input[type="checkbox"]{
+    width: 25px; /*Desired width*/
+    height: 25px; /*Desired height*/
+}
+
+#contact{
+    background-color: khaki;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    color: black;
+}
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: white;
+}
+footer{
+    background-color: bisque;
+    padding:30px;
+}

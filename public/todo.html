@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TooDue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../css/styletodo.css">
+    <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+</head>
+<body class="animated fadeIn">
+    <nav class="navbar navbar-default navbar-fixed-top" style="padding-bottom: 5px">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">TooDue</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#todo">App</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <br><br>
+
+    <section id="head">
+        <div class="container" style="text-align: center">
+            <div class="jumbotron">
+                <h1><span><img id="todoicon" src="todoicon2.png" style="height: 150px; width: 150px">   TooDue</span></h1>
+                <p class="lead">TooDue is a beautifully designed to-do list app for your
+                    browser to manage all your due tasks and get stuff done.
+                    TooDue is here to help you tick off all your personal and professional to-dos.</p>
+                <p><a class="btn btn-lg btn-success showcase-btn" href="index.html" role="button">Know More</a></p>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+
+    <section id="todo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="well" style="padding: 30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background: white">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-10" style="padding-top: 14px;text-align: center">
+                                <p id="test" style="font-family: Poppins;font-size: 25px">Add, Delete, Prioritize Your Tasks</p>
+                            </div>
+                            <div class="col-md-2 col-sm-2" style="text-align: center">
+                                <span><a type="button" data-toggle="modal" data-target="#addTodo" style="cursor: pointer"><i id="add" class="fa fa-plus-circle" style="font-size: 60px"></i></a></span>
+                            </div>
+                        </div>
+                        <hr style="width :370px; background-color: chocolate; border: none; height: 1px">
+                        <br>
+
+                        <div class="row" id="td"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addTodo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form id="addform">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add To-Do</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Task Heading</label>
+                            <input type="text" name="headin" id="heading" class="form-control" placeholder="Add task heading here">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="description" class="form-control" placeholder="Task Description"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Priority</label>
+                            <select id="priority" class="custom-select form-control">
+                                <option selected>Choose Priority</option>
+                                <option value="Low">Low</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Due Date</label>
+                            <input type="date" id="ddate" class="form-control" name="duedate">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" id="addbtn" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <section id="contact" style="text-align: center; padding-top: 50px; padding-bottom: 30px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="txt-railway" style="font-size: 40px"><strong>Contact Info</strong></h4><br><br>
+                    <a href="https://www.facebook.com/deepak.bansal1997"><i id="social-fb" class="fa fa-facebook-square fa-3x social" style="font-size: 100px"></i></a>
+                    <a href="https://twitter.com/theWeboy"><i id="social-tw" class="fa fa-twitter-square fa-3x social" style="font-size: 100px"></i></a>
+                    <a href="https://plus.google.com/u/0/111557126893453233425"><i id="social-gp" class="fa fa-google-plus-square fa-3x social" style="font-size: 100px"></i></a>
+                    <a href="https://github.com/theWeboy"><i id="social-em" class="fa fa-github fa-3x social" style="font-size: 100px"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p class="text-center">TooDue Copyright &copy; 2017</p>
+    </footer>
+
+    <!-- Scripts -->
+
+    <!--<script>-->
+        <!--CKEDITOR.replace( 'editor1' );-->
+    <!--</script>-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar',{
+            duration: 1000,
+            origin:'bottom'
+        });
+    </script>
+</body>
+</html>
