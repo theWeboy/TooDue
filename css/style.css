@@ -5,11 +5,17 @@ body{
     background-color: lightyellow;
 }
 #showcase-img{
-    height: 420px;
-    width: 490px;
+    height: 300px;
+    /*width: 490px;*/
     border-radius: 6%;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
 }
+
+.showcase-left{
+    width: 80%;
+
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: Poppins;
 }
