@@ -86,8 +86,53 @@ p{
     color: brown;
 }
 
-#manager{
-    margin-top: 8px;
+.manager {
+    -webkit-appearance: none;
+    background-color: azure;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px, rgba(0, 0, 0, 0.05) 0 -15px 10px -12px inset;
+    display: inline-block;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(202, 206, 206);
+    border-image: initial;
+    padding: 9px;
+    border-radius: 15px;
+}
+.manager:checked {
+    background-color: azure;
+    color: rgb(153, 161, 167);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(173, 184, 192);
+    border-image: initial;
+}
+input[type=file]:focus, input[type=checkbox]:focus, input[type=radio]:focus {
+    outline: 0;
+    /*outline-offset: -2px;*/
+}
+.manager:checked::after {
+    content: "✔";
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 4px;
+    color: green;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.4);
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 input[type="checkbox"]{

@@ -53,7 +53,7 @@ $(function () {
 
             output += `
             <div id="list">
-                <div class = "col-md-8 animated fadeIn " id="cont" onload="Colr(this,${todoList[i].id})" style="margin-bottom: 10px">
+                <div class = "col-md-8 animated fadeIn " id="cont" onload="Colr(this,${todoList[i].id})" style="margin-bottom: 10px;min-height: 56px">
                     <div class="header animated fadeInDown" style=" padding-left: 10px">
                         <h3 class="header" style="cursor: pointer">${todoList[i].head}<i class="fa fa-chevron-down" style="font-size: 13px;margin-left: 8px" aria-hidden="true"></i></h3>
                     </div>
@@ -65,10 +65,10 @@ $(function () {
                     </div>
                 </div>  
                               
-                <div class="col-md-2 collapsible collapsed animated fadeInDown" style="min-height:28px; padding-top: 9px">
+                <div class="col-md-2 collapsible collapsed animated fadeInDown" style="min-height:28px; padding-top: 9px;text-align: center">
                     <a class="del-anch"></a><i class="fa fa-trash-o del-icon" id="${todoList[i].id}" aria-hidden="true"></i>
                 </div>
-                <div class="col-md-2 collapsible collapsed animated fadeInDown" style="min-height:28px; padding-top: 12px">
+                <div class="col-md-2 collapsible collapsed animated fadeInDown" style="min-height:28px; padding-top: 12px;text-align: center">
                     <input type="checkbox" ${todoList[i].done? "checked": "" } onchange="Reset(this)" class="manager" id="${todoList[i].id}" />
                     <label for="manager"></label>
                 </div>
